@@ -24,7 +24,6 @@ class Registration(TestUtils):
         self.logger.info("Passed registration username")
 
     def pass_registration_email(self, registration_email):
-        # time.sleep(5)
         self.driver.find_element(*self.registration_email).send_keys(registration_email)
         self.logger.info("Passed registration email")
 
