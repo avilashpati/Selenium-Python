@@ -20,7 +20,7 @@ class Registration(TestUtils):
 
     def pass_registration_username(self, registration_username):
         print("{} {}".format("Expected UserName =>", registration_username))
-        time.sleep(5)
+        self.wait_for_page_load()
         self.driver.find_element(*self.registration_username).send_keys(registration_username)
         self.logger.info("Passed registration username")
 
