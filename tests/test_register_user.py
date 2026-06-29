@@ -28,5 +28,5 @@ def test_register_user(browser_instance,test_list_value):
     account_address.assert_auto_populated_account_holder_name(test_list_value["registration_username"])
     account_address.assert_auto_populated_account_email(test_list_value["registration_email"])
     account_address.pass_account_password(test_list_value["registration_password"])
-
+#xy#
 
