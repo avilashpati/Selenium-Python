@@ -22,7 +22,7 @@ def test_register_user(browser_instance,test_list_value):
     logger.info("Printed Dashboard Title")
     registration = dashboard.click_on_signup_or_login()
     registration.pass_registration_username(test_list_value["registration_username"])
-    registration.pass_registration_email(test_list_value["registration_email"])
+    # registration.pass_registration_email(test_list_value["registration_email"])
 
     # account_address = registration.click_signup_button()
     # account_address.pass_account_gender()
