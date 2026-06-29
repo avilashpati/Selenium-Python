@@ -1,0 +1,11 @@
+2026-06-29 16:47:13,976 - INFO - Logger test
+2026-06-29 16:47:13,977 - INFO - Launched browser
+2026-06-29 16:47:13,978 - INFO - Printed Dashboard Title
+2026-06-29 16:47:15,546 - INFO - Clicked on Signup or Login button in dashboard
+2026-06-29 16:47:15,594 - INFO - Passed registration username
+2026-06-29 16:47:15,680 - INFO - Passed registration email
+2026-06-29 16:47:17,314 - INFO - Clicked on Signup button
+2026-06-29 16:47:17,364 - INFO - Passed account holder gender
+2026-06-29 16:47:17,419 - INFO - Account holder name is populated correctly
+2026-06-29 16:47:17,431 - INFO - Account holder email is populated correctly
+2026-06-29 16:47:17,493 - INFO - Entered password
