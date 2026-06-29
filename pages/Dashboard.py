@@ -15,7 +15,8 @@ class Dashboard(TestUtils):
         self.click_signup_or_login = DashBoardLocators.signup_or_login
 
     def click_on_signup_or_login(self):
-        self.driver.find_element(*self.click_signup_or_login).click()
+        element = self.element_to_be_clickable(self.click_signup_or_login)
+        element.click()
         self.logger.info("Clicked on Signup or Login button in dashboard")
         registration = Registration(self.driver)
         return registration
