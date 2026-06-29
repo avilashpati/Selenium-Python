@@ -1,17 +1,15 @@
-import time
-
-from selenium.webdriver.common.by import By
-
 from locators.RegistrationLocators import RegistrationPageLocators
 from pages.AccountAddress import AccountAddress
 from utilities.TestUtils import TestUtils
+from utilities.WaitUtils import WaitUtils
 from utilities.logger import get_logger
 
 
-class Registration(TestUtils):
+class Registration(TestUtils, WaitUtils):
 
     def __init__(self,driver):
-        super().__init__(driver)
+        TestUtils.__init__(self, driver)
+        WaitUtils.__init__(self, driver)
         self.logger = get_logger()
         self.driver = driver
         self.registration_username = RegistrationPageLocators.reg_uname

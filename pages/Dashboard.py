@@ -1,15 +1,15 @@
-from selenium.webdriver.common.by import By
-
 from locators.DashboardLocators import DashBoardLocators
 from pages.Registration import Registration
 from utilities.TestUtils import TestUtils
+from utilities.WaitUtils import WaitUtils
 from utilities.logger import get_logger
 
 
-class Dashboard(TestUtils):
+class Dashboard(TestUtils, WaitUtils):
 
     def __init__(self,driver):
-        super().__init__(driver)
+        TestUtils.__init__(self, driver)
+        WaitUtils.__init__(self, driver)
         self.logger = get_logger()
         self.driver = driver
         self.click_signup_or_login = DashBoardLocators.signup_or_login

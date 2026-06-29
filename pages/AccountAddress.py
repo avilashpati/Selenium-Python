@@ -1,14 +1,14 @@
-from selenium.webdriver.common.by import By
-
 from locators.AccountAddressLocators import AccountAddressLocators
 from utilities.TestUtils import TestUtils
+from utilities.WaitUtils import WaitUtils
 from utilities.logger import get_logger
 
 
-class AccountAddress(TestUtils):
+class AccountAddress(TestUtils,WaitUtils):
 
     def __init__(self,driver):
-        super().__init__(driver)
+        TestUtils.__init__(self, driver)
+        WaitUtils.__init__(self, driver)
         self.logger = get_logger()
         self.driver = driver
         self.account_gender = AccountAddressLocators.gender_female
