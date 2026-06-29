@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 
 from locators.RegistrationLocators import RegistrationPageLocators
@@ -17,6 +19,8 @@ class Registration(TestUtils):
         self.registration_button = RegistrationPageLocators.sign_up
 
     def pass_registration_username(self, registration_username):
+        print("{} {}".format("Expected UserName =>", registration_username))
+        time.sleep(5)
         self.driver.find_element(*self.registration_username).send_keys(registration_username)
         self.logger.info("Passed registration username")
 
