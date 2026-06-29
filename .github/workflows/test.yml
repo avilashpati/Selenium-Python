@@ -32,8 +32,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          grep -iv "pywin32" requirements.txt > requirements_linux.txt
-          python -m pip install -r requirements_linux.txt
+          python -m pip install --upgrade pip
+          python -m pip install pytest pytest-html selenium
 
       - name: Verify installation
         run: |
